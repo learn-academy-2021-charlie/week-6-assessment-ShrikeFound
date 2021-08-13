@@ -74,10 +74,21 @@ const describePeople = (array) =>{
 
 // a) Create a test with an expect statement using the variables provided.
 
-var hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false]
-// Expected output: [ 2, 0, -1, 0 ]
-var hodgepodge2 = [5, "Hola", 43, -34, "greetings", true]
-// Expected output: [ 2, 1, -1 ]
+
+describe("returnValidRemainders",() =>{
+
+  const hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false]
+  const output1 =  [ 2, 0, -1, 0 ]
+  const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true]
+  const output2 =[ 2, 1, -1 ]
+
+  it("returns only remainders of numbers when divided by 3",() =>{
+    expect(returnValidRemainders(hodgepodge1)).toEqual(output1)
+    expect(returnValidRemainders(hodgepodge2)).toEqual(output2)
+  })
+
+})
+
 
 
 
