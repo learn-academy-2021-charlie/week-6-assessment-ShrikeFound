@@ -153,4 +153,5 @@ const sumCubed = (array) =>{
   return array.reduce((total,num) =>{
     return  num**3 + total
   },0)
+
 }
