@@ -18,12 +18,21 @@
 
 // a) Create a test with an expect statement using the variable provided.
 
-var people = [
-  { name: "ford prefect", occupation: "hitchhiker" },
-  { name: "zaphod beeblebrox", occupation: "president of the galaxy" },
-  { name: "arthur dent", occupation: "radio employee" }
-]
-// Expected output: ["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is a president of the galaxy.", "Arthur Dent is a radio employee."]
+describe("describePeople",() =>{
+  const people = [
+    { name: "ford prefect", occupation: "hitchhiker" },
+    { name: "zaphod beeblebrox", occupation: "president of the galaxy" },
+    { name: "arthur dent", occupation: "radio employee" }
+  ]
+  const output = ["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is a president of the galaxy.", "Arthur Dent is a radio employee."]
+  
+  it("returns an array with a properly capitalized sentence",() =>{
+    expect(describePeople(people)).toEqual(output)
+  })
+
+
+})
+
 
 
 
