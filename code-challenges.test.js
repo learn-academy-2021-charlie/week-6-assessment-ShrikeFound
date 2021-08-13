@@ -32,11 +32,41 @@ describe("describePeople",() =>{
 
 
 })
-
-
-
-
 // b) Create the function that makes the test pass.
+
+//we want a function that takes in one array and returns another
+//we want to create a string with the two values of each object in the array
+//and...also capitalize the name?
+//gonna start by getting everything in the object into a string, the think about how to get the name capitalized
+
+// const describePeople = (array) =>{
+//   //template literal to create a sentence with the values
+  
+//   return array.map(ob => {
+//   //template literal to create a sentence with the values
+//   return `${ob.name} is a ${ob.occupation}.`
+// })
+// }
+
+//then I need to capitalize each name.
+
+const describePeople = (array) =>{
+  //template literal to create a sentence with the values
+  
+  return array.map(ob => {
+
+  //we're splitting the name into an array of names,
+  //then mapping through each name and capitalizing the first letter.
+  //we're concatenating the capitalized first letter with the rest of the name.
+  //then joining the array of words back into a string with spaces between the words.
+  const capitalizedName = ob.name.split(" ").map( w =>{
+    return w[0].toUpperCase()+w.slice(1)
+  }).join(" ")
+
+  //template literal to create a sentence with the values
+  return `${capitalizedName} is a ${ob.occupation}.`
+})
+}
 
 
 
