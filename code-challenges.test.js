@@ -68,6 +68,7 @@ const describePeople = (array) =>{
 })
 }
 
+//seems kind messy. Will come back.
 
 
 // --------------------2) Create a function that takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3.
@@ -94,16 +95,34 @@ describe("returnValidRemainders",() =>{
 
 // b) Create the function that makes the test pass.
 
+//for this one, again we're receiving an array and want to return an array.
+//we'll want to filter for only numbers
+//then transform those numbers into the result we want: the remainder of the original number divided by 3.
 
+const returnValidRemainders = (array) =>{
+  return array.filter(item => typeof item == "number").map(num =>{
+    return num % 3
+  })
+}
 
 // --------------------3) Create a function that takes in an array of numbers and returns the sum of all the numbers cubed.
 
 // a) Create a test with an expect statement using the variables provided.
 
-var cubeAndSum1 = [2, 3, 4]
-// Expected output: 99
-var cubeAndSum2 = [0, 5, 10]
-// Expected output: 1125
+describe("sumCubed",() =>{
+  const cubeAndSum1 = [2, 3, 4]
+  const output1 =  99
+  const cubeAndSum2 = [0, 5, 10]
+  const output2 =  1125
+  
+  it("returns the sum of all numbers cubed",() =>{
+    expect(sumCubed(cubeAndSum1)).toEqual(output1)
+    expect(sumCubed(cubeAndSum2)).toEqual(output2)
+  })
+
+
+})
+
 
 
 
