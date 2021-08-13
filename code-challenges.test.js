@@ -145,8 +145,12 @@ describe("sumCubed",() =>{
 //we want to cube each number, then add it to the rest. 
 //we could start with 0, then add each successive cube.
 //we can do this with a reduce method.
-
+//we can use 0 as the initial value
+//the total is our accumulator
 
 const sumCubed = (array) =>{
 
+  return array.reduce((total,num) =>{
+    return  num**3 + total
+  },0)
 }
