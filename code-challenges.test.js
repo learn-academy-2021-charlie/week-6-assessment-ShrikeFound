@@ -123,7 +123,30 @@ describe("sumCubed",() =>{
 
 })
 
-
-
-
 // b) Create the function that makes the test pass.
+
+//wasn't sure if we wanted to sum all cubed numbers (2**3 + 3**3, 4**3) or if we wanted to sum them first then cube.
+//not even really sure if there's a different.
+//quick maffs:
+
+//option 1: cube then add
+// 4**3 = 64
+// 3**3 = 27
+// 2**3 = 8
+// 64 + 27 + 8 = 99
+
+//option 2: add then cube
+//4+3+2 = 9
+// 9**3 = 729
+
+// so, definitely cube THEN add.
+
+
+//we want to cube each number, then add it to the rest. 
+//we could start with 0, then add each successive cube.
+//we can do this with a reduce method.
+
+
+const sumCubed = (array) =>{
+
+}
