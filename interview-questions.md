@@ -10,7 +10,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 **Your answer:**
 
-Since we want to make a change to the database structure, we'd start my creating a migration. We'd add a column to the sightings table using somehthing like:
+Since we want to make a change to the database structure, we'd start my creating a migration. We'd add a column to the sightings table using something like:
 
 ```ruby
 def change

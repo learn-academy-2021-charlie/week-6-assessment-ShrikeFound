@@ -63,12 +63,16 @@ const describePeople = (array) =>{
     return w[0].toUpperCase()+w.slice(1)
   }).join(" ")
 
+  const occupation = ob.occupation
+
   //template literal to create a sentence with the values
-  return `${capitalizedName} is a ${ob.occupation}.`
+  return `${capitalizedName} is a ${occupation}.`
 })
 }
 
 //seems kind messy. Will come back.
+//separated occupation and capitalized name into their own variables
+
 
 
 // --------------------2) Create a function that takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3.
