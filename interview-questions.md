@@ -18,7 +18,15 @@ def change
 end
 ```
 
-**Researched answer:**
+**Researched answer:** we'd also want to check to make sure we added the relation to the model. We'd add `belongs_to :animal` to the sighting model. We could also add a foreign key contraint with the name of the tables:
+
+```ruby
+def change
+  add_foreign_key :sightings, :animals
+end
+```
+
+a foreign key restraint isn't required, but adding one provides another layer of protection. You won't be able to remove an animal record if it is required by a sighting. Without the constraint, you might remove an animal record another sighting record requires to be valid.
 
 ## 2. Which RESTful API routes must always be passed params? Why?
 
