@@ -50,6 +50,8 @@ Three rails generator commands are:
 
 **Researched answer:**
 
+We've also got the resource controller (`rails g resource`) that will generate the same stuff that both the model and controller generators create, plus resources in the routes file. We could go a step further and use `rails g scaffold`, which will generate all the same things, along with the appropriate methods in the controller and the corresponding view files.
+
 ## 4. Consider the Rails routes below. What is the name of the controller method that would be called by each route? What action would each of the controller methods perform?
 
 #### method="GET" /students
