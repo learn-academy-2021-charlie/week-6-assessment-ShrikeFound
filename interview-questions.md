@@ -76,11 +76,11 @@ The `#edit` method gets the student with the specified index (2) and renders a f
 
 #### method="PATCH" /students/2
 
-The `#update` method updates information for student with index 2.
+The `#update` method updates information for the student with an id 2.
 
 #### method="DELETE" /students/2
 
-The `#destroy` method deletes the student with an index of 2.
+The `#destroy` method deletes the student with an id of 2.
 
 ## 5. As a developer, you want to make an application that will help you manage your to do list. Create 10 user stories that will help you get your application started. Read more about [user stories](https://www.atlassian.com/agile/project-management/user-stories).
 
