@@ -7,7 +7,7 @@
 # FILE: app/controller/blog_posts_controller.rb
 
 # ---1)
-#defines a BlogPostController class that inherits from the ApplicationsController.
+#defines a BlogPostController class that inherits from the ApplicationsController. We'll have all our actions in here.
 class BlogPostsController < ApplicationController
   def index
     # ---2)
@@ -24,7 +24,7 @@ class BlogPostsController < ApplicationController
 
   # ---4)
   #defines a new method that the router will point us to. It creates
-  #a new instance variable 'post' and the value of a new post;
+  #a new instance variable 'post' with the value of a new post;
   def new
     @post = Post.new
   end
