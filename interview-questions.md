@@ -36,6 +36,8 @@ The restful api routes are: `index`,`show`,`create`,`update`,`destroy`. The `sho
 
 **Researched answer:**
 
+the `update` route and `create` route both require something in the body or `params.require(:animal)` will give us an error. In that way, all of the routes except for `index` require something from the request.
+
 ## 3. Name three rails generator commands. What is created by each?
 
 **Your answer:**
